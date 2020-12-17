@@ -10,7 +10,9 @@ CLASS zcl_generate_bookingsfl_ATP DEFINITION
 ENDCLASS.
 
 
-CLASS zcl_generate_bookingsfl_ATP IMPLEMENTATION.
+
+CLASS ZCL_GENERATE_BOOKINGSFL_ATP IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
     DATA:it_bookings TYPE TABLE OF ztbookingfl_ATP.
@@ -33,9 +35,7 @@ CLASS zcl_generate_bookingsfl_ATP IMPLEMENTATION.
 *   check the result
     SELECT * FROM ztbookingfl_ATP INTO TABLE @it_bookings.
     out->write( sy-dbcnt ).
-    out->write( 'data inserted successfully!').
+    out->write( 'data inserted').
 
   ENDMETHOD.
-
 ENDCLASS.
-
