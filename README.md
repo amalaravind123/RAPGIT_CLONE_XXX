@@ -1,2 +1,1 @@
-# RAPGIT_CLONE_XXX
-ABAP RAP
+ABAP Resful Programming Model 
