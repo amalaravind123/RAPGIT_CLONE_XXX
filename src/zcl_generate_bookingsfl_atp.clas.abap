@@ -35,7 +35,7 @@ CLASS ZCL_GENERATE_BOOKINGSFL_ATP IMPLEMENTATION.
 *   check the result
     SELECT * FROM ztbookingfl_ATP INTO TABLE @it_bookings.
     out->write( sy-dbcnt ).
-    out->write( 'Insert Sucessful ').
+    out->write( 'Insert Sucessful').
 
   ENDMETHOD.
 ENDCLASS.
